@@ -734,22 +734,27 @@
             font-weight: 700;
         }
 
+        /* FIXED: Adaptable QR code placeholder to fit user's rectangular 254x368 cropped QR code image perfectly without squishing it */
         .qr-placeholder {
-            width: 140px;
-            height: 140px;
+            width: 145px;
+            height: 175px;
             background: #ffffff;
-            padding: 8px;
+            padding: 10px;
             border-radius: var(--radius-sm);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
+        /* FIXED: Set image width auto, max-height 120px, and object-fit contain to maintain pristine original aspect ratio on both Mobile and Desktop */
         .qr-image {
-            width: 105px;
-            height: 105px;
+            max-width: 100%;
+            max-height: 125px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
             display: block;
         }
 
@@ -910,6 +915,7 @@
 
             .qr-placeholder {
                 border: 1px solid #000000;
+                height: 175px !important;
             }
         }
     </style>
@@ -1313,8 +1319,9 @@
                             
                             <div class="ticket-stub">
                                 <div class="ticket-label" style="text-align: center; margin-bottom: 8px;">Código Acceso</div>
+                                <!-- FIXED: Adjusted placeholder to be 145x175 to perfectly frame the rectangular original QR Code -->
                                 <div class="qr-placeholder">
-                                    <!-- Dynamic Real scannable QR Image (offline supported) -->
+                                    <!-- FIXED: relative image tag that scales cleanly keeping aspect ratio without squishing -->
                                     <img src="qr_code.png" alt="Código QR C8FKSL63T" class="qr-image" />
                                     <span style="font-family: 'Outfit'; font-size: 0.75rem; font-weight: 800; color: #0f172a; margin-top: 6px; letter-spacing: 0.05em;">C8FKSL63T</span>
                                 </div>
