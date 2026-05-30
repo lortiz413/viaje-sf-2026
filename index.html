@@ -650,7 +650,7 @@
             border-bottom: 2px solid var(--primary);
         }
 
-        /* Ticket Design CSS (New!) */
+        /* Ticket Design CSS */
         .ticket-box {
             background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
             border-radius: var(--radius-md);
@@ -735,8 +735,8 @@
         }
 
         .qr-placeholder {
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
             background: #ffffff;
             padding: 8px;
             border-radius: var(--radius-sm);
@@ -745,6 +745,12 @@
             align-items: center;
             justify-content: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .qr-image {
+            width: 105px;
+            height: 105px;
+            display: block;
         }
 
         /* Print Layout Rules */
@@ -1264,7 +1270,7 @@
             </div>
         </div>
 
-        <!-- 3. TAB CONFERENCIA (NEW!) -->
+        <!-- 3. TAB CONFERENCIA -->
         <div id="tab-conferencia" class="tab-panel">
             <div class="panel-grid">
                 <div>
@@ -1275,7 +1281,7 @@
                         </div>
                         
                         <p style="margin-bottom: 24px; color: var(--text-secondary);">
-                            Tu pase para el evento ha sido adquirido exitosamente a través de la plataforma Universe (A Ticketmaster Company). A continuación tienes la tarjeta oficial con tu código digital para el registro:
+                            Tu pase para el evento ha sido adquirido exitosamente a través de la plataforma Universe (A Ticketmaster Company). A continuación tienes la tarjeta oficial con tu código digital y QR para el registro:
                         </p>
                         
                         <!-- Visual Premium Ticket -->
@@ -1308,10 +1314,8 @@
                             <div class="ticket-stub">
                                 <div class="ticket-label" style="text-align: center; margin-bottom: 8px;">Código Acceso</div>
                                 <div class="qr-placeholder">
-                                    <!-- Dynamic QR layout (crisp inline svg) -->
-                                    <svg width="60" height="60" viewBox="0 0 29 29" fill="none" stroke="#000000" stroke-width="1">
-                                        <path d="M0 0h7v7H0zm0 22h7v7H0zm22-22h7v7h-7zM2 2h3v3H2zm0 22h3v3H2zm22-22h3v3h-3zM10 0h2v2h-2zm0 4h2v2h-2zm0 8h2v2h-2zm0 8h2v2h-2zm0 4h2v2h-2zm4-20h2v2h-2zm0 8h2v2h-2zm0 8h2v2h-2zm4-8h2v2h-2zm0 8h2v2h-2zm4-16h2v2h-2zm0 8h2v2h-2zm0 8h2v2h-2z" fill="#0f172a" />
-                                    </svg>
+                                    <!-- Dynamic Real scannable QR Image (offline supported) -->
+                                    <img src="qr_code.png" alt="Código QR C8FKSL63T" class="qr-image" />
                                     <span style="font-family: 'Outfit'; font-size: 0.75rem; font-weight: 800; color: #0f172a; margin-top: 6px; letter-spacing: 0.05em;">C8FKSL63T</span>
                                 </div>
                                 <div class="ticket-label" style="margin-top: 12px; font-size: 0.65rem; opacity: 0.7; text-align: center;">Universe Ticketmaster</div>
