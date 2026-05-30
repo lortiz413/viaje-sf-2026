@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerario de Viaje - San Francisco (UPSCALE CONFERENCE SF)</title>
+    <meta name="description" content="Itinerario de viaje detallado, confirmaciones de vuelo, reserva de hotel y guía de llegada para Luis Enrique Ortiz.">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Colors - Light Theme */
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --accent-gradient: linear-gradient(135deg, #4f46e5, #7c3aed, #db2777);
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --border: #e2e8f0;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --glass-blur: 12px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            /* Colors - Dark Theme */
+            --bg-primary: #0b0f19;
+            --bg-secondary: #131b2e;
+            --bg-tertiary: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --accent-gradient: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+            --primary: #818cf8;
+            --secondary: #c084fc;
+            --border: #1e293b;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+            --glass-bg: rgba(19, 27, 46, 0.7);
+            --glass-border: rgba(30, 41, 59, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            transition: var(--transition);
+            padding-bottom: 60px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Section */
+        header {
+            position: relative;
+            background: var(--accent-gradient);
+            padding: 60px 0 120px 0;
+            border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.15) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header-title-area {
+            color: #ffffff;
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .header-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 8px;
+        }
+
+        .header-subtitle {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #ffffff;
+            color: #0f172a;
+            border: none;
+            padding: 10px 18px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Floating Nav Card */
+        .nav-wrapper {
+            margin-top: -60px;
+            position: relative;
+            z-index: 20;
+            margin-bottom: 40px;
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(var(--glass-blur));
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            padding: 24px;
+            transition: var(--transition);
+        }
+
+        .nav-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+
+        .nav-tab-item {
+            width: auto;
+        }
+
+        .nav-tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 10px 16px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-tab-btn:hover {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+        }
+
+        .nav-tab-btn.active {
+            background: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+        }
+
+        .quick-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .quick-info-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .quick-info-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-sm);
+            background: var(--bg-tertiary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            flex-shrink: 0;
+            border: 1px solid var(--border);
+        }
+
+        .quick-info-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .quick-info-value {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Tab Content Panels */
+        .tab-panel {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cards & Grids */
+        .panel-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+
+        @media (max-width: 850px) {
+            .panel-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow);
+            padding: 32px;
+            margin-bottom: 32px;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-primary);
+        }
+
+        .card-badge {
+            background: var(--success);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 50px;
+            text-transform: uppercase;
+        }
+
+        /* Flight Timelines */
+        .flight-timeline {
+            position: relative;
+            padding-left: 28px;
+            margin: 24px 0;
+        }
+
+        .flight-timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: dashed var(--border);
+        }
+
+        .timeline-step {
+            position: relative;
+            margin-bottom: 32px;
+        }
+
+        .timeline-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-step::before {
+            content: '';
+            position: absolute;
+            left: -28px;
+            top: 4px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            border: 4px solid var(--primary);
+            z-index: 10;
+        }
+
+        .timeline-step.layover::before {
+            border-color: var(--warning);
+            width: 14px;
+            height: 14px;
+            left: -26px;
+            top: 6px;
+        }
+
+        .timeline-step.destination::before {
+            border-color: var(--success);
+        }
+
+        .timeline-time {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 6px;
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .timeline-details {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 16px 20px;
+            border-radius: var(--radius-sm);
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+        }
+
+        .timeline-detail-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .timeline-detail-val {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .layover-bar {
+            background: rgba(245, 158, 11, 0.08);
+            border: 1px dashed var(--warning);
+            color: var(--warning);
+            padding: 10px 16px;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        /* Sidebar Cards */
+        .info-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-primary);
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .info-list-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-list-label {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .info-list-value {
+            font-weight: 700;
+            text-align: right;
+            color: var(--text-primary);
+        }
+
+        /* Alert Callout */
+        .alert-callout {
+            background: rgba(239, 68, 68, 0.06);
+            border-left: 5px solid var(--danger);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            padding: 20px;
+            margin: 24px 0;
+            color: var(--text-primary);
+        }
+
+        .alert-callout-title {
+            font-weight: 700;
+            color: var(--danger);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+        }
+
+        /* Interactive Checklist */
+        .checklist-container {
+            margin-top: 20px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 16px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: var(--transition);
+            user-select: none;
+        }
+
+        .checklist-item:hover {
+            border-color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        .checklist-checkbox {
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            border: 2px solid var(--border);
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: transparent;
+            transition: var(--transition);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .checklist-item.checked .checklist-checkbox {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+
+        .checklist-content {
+            flex-grow: 1;
+        }
+
+        .checklist-item-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+            color: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        .checklist-item.checked .checklist-item-title {
+            text-decoration: line-through;
+            color: var(--text-muted);
+        }
+
+        .checklist-item-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Finance Summary Table */
+        .finance-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .finance-table th, .finance-table td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .finance-table th {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background: var(--bg-tertiary);
+        }
+
+        .finance-table td {
+            font-size: 0.95rem;
+        }
+
+        .finance-table tr.total-row {
+            background: rgba(99, 102, 241, 0.06);
+            border-top: 2px solid var(--primary);
+            font-weight: 800;
+        }
+
+        .finance-table tr.total-row td {
+            font-size: 1.15rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+        }
+
+        /* Print Layout Rules */
+        @media print {
+            body {
+                background: #ffffff;
+                color: #000000;
+                font-size: 12pt;
+                padding-bottom: 0;
+            }
+
+            header {
+                background: none;
+                color: #000000;
+                padding: 0;
+                border-radius: 0;
+                box-shadow: none;
+                border-bottom: 2px solid #000000;
+                margin-bottom: 30px;
+            }
+
+            .header-title-area {
+                color: #000000;
+            }
+
+            .header-title {
+                font-size: 24pt;
+            }
+
+            .header-subtitle {
+                color: #333333;
+            }
+
+            .tag {
+                border-color: #000000;
+                color: #000000;
+                font-size: 10pt;
+            }
+
+            .btn, .header-controls, .nav-tabs, .theme-toggle-btn {
+                display: none !important;
+            }
+
+            .nav-wrapper {
+                margin-top: 0;
+                box-shadow: none;
+                background: none;
+                border: none;
+                padding: 0;
+            }
+
+            .glass-card {
+                background: none;
+                backdrop-filter: none;
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+
+            .quick-info-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+                border-bottom: 1px solid #cccccc;
+                padding-bottom: 20px;
+            }
+
+            .quick-info-icon {
+                display: none;
+            }
+
+            .tab-panel {
+                display: block !important; /* Print all sections */
+                page-break-after: always;
+            }
+
+            .tab-panel:last-child {
+                page-break-after: avoid;
+            }
+
+            .panel-grid {
+                display: block;
+            }
+
+            .card, .info-card {
+                border: 1px solid #999999;
+                box-shadow: none;
+                page-break-inside: avoid;
+                margin-bottom: 24px;
+                background: none;
+            }
+
+            .timeline-details, .layover-bar {
+                background: #f5f5f5 !important;
+                border: 1px solid #cccccc !important;
+                color: #000000 !important;
+            }
+
+            .layover-bar {
+                border-style: solid;
+            }
+
+            .alert-callout {
+                background: #f9f9f9;
+                border: 1px solid #ff0000;
+                border-left-width: 6px;
+                color: #000000;
+            }
+
+            .checklist-checkbox {
+                border-color: #000000;
+            }
+
+            .checklist-item.checked .checklist-checkbox::after {
+                content: '✓';
+                color: #000000;
+                font-weight: bold;
+            }
+
+            .checklist-item {
+                border: 1px solid #cccccc;
+                background: none;
+            }
+
+            .finance-table th {
+                background: #f0f0f0;
+                color: #000000;
+                border-bottom: 1px solid #999999;
+            }
+
+            .finance-table tr.total-row {
+                background: #e0e0e0;
+                border-top: 2px solid #000000;
+            }
+
+            .finance-table tr.total-row td {
+                color: #000000;
+                border-bottom: 2px solid #000000;
+            }
+        }
+    </style>
+</head>
+<body data-theme="light">
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-title-area">
+                    <span class="tag">UPSCALE CONFERENCE SF</span>
+                    <h1 class="header-title">Mi Itinerario de Viaje</h1>
+                    <div class="header-subtitle">
+                        <span>✈️ San Francisco, CA</span>
+                        <span>•</span>
+                        <span>👤 Luis Enrique Ortiz</span>
+                    </div>
+                </div>
+                <div class="header-controls">
+                    <!-- Light / Dark Mode Toggle Button -->
+                    <button class="btn btn-outline" id="theme-toggle" aria-label="Cambiar tema">
+                        <svg id="theme-toggle-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Moon Icon (Default Light Mode -> Switch to Dark) -->
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <span id="theme-text">Modo Oscuro</span>
+                    </button>
+                    <!-- PDF Generation Button -->
+                    <button class="btn" onclick="window.print()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                            <rect x="6" y="14" width="12" height="8"></rect>
+                        </svg>
+                        Guardar PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Nav and Summary Card -->
+    <div class="container nav-wrapper">
+        <div class="glass-card">
+            <!-- Tabs Menu -->
+            <ul class="nav-tabs" role="tablist">
+                <li class="nav-tab-item">
+                    <button class="nav-tab-btn active" onclick="switchTab(event, 'tab-resumen')" role="tab" aria-selected="true">
+                        🗂️ Resumen
+                    </button>
+                </li>
+                <li class="nav-tab-item">
+                    <button class="nav-tab-btn" onclick="switchTab(event, 'tab-ida')" role="tab" aria-selected="false">
+                        🛫 Ida (Jun 2)
+                    </button>
+                </li>
+                <li class="nav-tab-item">
+                    <button class="nav-tab-btn" onclick="switchTab(event, 'tab-regreso')" role="tab" aria-selected="false">
+                        🛬 Regreso (Jun 5)
+                    </button>
+                </li>
+                <li class="nav-tab-item">
+                    <button class="nav-tab-btn" onclick="switchTab(event, 'tab-hotel')" role="tab" aria-selected="false">
+                        🏨 Hotel & Llegada
+                    </button>
+                </li>
+                <li class="nav-tab-item">
+                    <button class="nav-tab-btn" onclick="switchTab(event, 'tab-seguro')" role="tab" aria-selected="false">
+                        🛡️ Seguro & Finanzas
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Quick Information Grid -->
+            <div class="quick-info-grid">
+                <div class="quick-info-item">
+                    <div class="quick-info-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="quick-info-label">Fechas</div>
+                        <div class="quick-info-value">Jun 2 - Jun 6</div>
+                    </div>
+                </div>
+                <div class="quick-info-item">
+                    <div class="quick-info-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="quick-info-label">Hospedaje</div>
+                        <div class="quick-info-value">Hampton Inn Hilton</div>
+                    </div>
+                </div>
+                <div class="quick-info-item">
+                    <div class="quick-info-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="quick-info-label">Conf. Hotel</div>
+                        <div class="quick-info-value">1008345490</div>
+                    </div>
+                </div>
+                <div class="quick-info-item">
+                    <div class="quick-info-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="quick-info-label">Póliza Seguro</div>
+                        <div class="quick-info-value">1002495146</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="container">
+
+        <!-- 1. TAB RESUMEN -->
+        <div id="tab-resumen" class="tab-panel active">
+            <div class="panel-grid">
+                <div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">🗓️ Descripción General</h2>
+                            <span class="card-badge">Confirmado</span>
+                        </div>
+                        <p style="margin-bottom: 20px;">
+                            Hola <strong>Luis</strong>, tienes todo listo para tu viaje a la conferencia en San Francisco. Este portal reúne toda la información de tus vuelos, tu estadía en el hotel y tu póliza de seguro en un solo lugar. Puedes utilizarlo en tu computadora o dispositivo móvil, y guardarlo directamente como un documento de consulta PDF usando el botón superior.
+                        </p>
+                        
+                        <div class="alert-callout">
+                            <div class="alert-callout-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                                Recordatorio Crítico de Check-in
+                            </div>
+                            <p style="font-size: 0.95rem;">
+                                Tu vuelo de ida parte a las <strong>7:00 AM el martes, 2 de junio</strong> desde San Juan (SJU). Asegúrate de estar en el aeropuerto al menos 2.5 o 3 horas antes para realizar el chequeo de equipaje y pasar el filtro de seguridad de la TSA con tranquilidad.
+                            </p>
+                        </div>
+                        
+                        <div style="margin-top: 32px;">
+                            <h3 style="margin-bottom: 16px; font-family: 'Outfit', sans-serif;">📍 Ubicación de tu Hospedaje</h3>
+                            <div style="background: var(--bg-tertiary); padding: 20px; border-radius: var(--radius-sm); border: 1px solid var(--border); display: flex; align-items: flex-start; gap: 16px;">
+                                <div style="color: var(--primary); font-size: 1.5rem; margin-top: 3px;">📍</div>
+                                <div>
+                                    <h4 style="font-weight: 700; margin-bottom: 4px;">Hampton Inn By Hilton San Francisco-Airport</h4>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">
+                                        300 Gateway Blvd., South San Francisco, CA 94080
+                                    </p>
+                                    <a href="https://maps.google.com/?q=300+Gateway+Blvd,+South+San+Francisco,+CA+94080" target="_blank" class="btn btn-outline" style="display: inline-flex; padding: 6px 12px; font-size: 0.8rem; color: var(--primary); border-color: var(--primary); background: transparent;">
+                                        🗺️ Ver en Google Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Quick Numbers Sidebar -->
+                    <div class="info-card">
+                        <div class="info-card-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            Claves de Acceso Rápido
+                        </div>
+                        <ul class="info-list">
+                            <li class="info-list-item">
+                                <span class="info-list-label">Itinerario Expedia</span>
+                                <span class="info-list-value">73458984392656</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Vuelo Ida (UA) Conf</span>
+                                <span class="info-list-value">FPXMKM</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Vuelo Vuelta (B6) Conf</span>
+                                <span class="info-list-value">ERVCXP</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Priceline Trip ID</span>
+                                <span class="info-list-value">352-671-753-96</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Confirmación Hotel</span>
+                                <span class="info-list-value" style="color: var(--primary);">1008345490</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Teléfono Hotel</span>
+                                <span class="info-list-value">650-876-0200</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. TAB IDA -->
+        <div id="tab-ida" class="tab-panel">
+            <div class="panel-grid">
+                <div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">🛫 Detalle del Viaje de Ida</h2>
+                            <span class="card-badge" style="background: var(--primary);">United Airlines</span>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 24px;">
+                            Tu viaje de ida se realiza en dos tramos con United Airlines el día <strong>Martes, 2 de Junio de 2026</strong>. Todo tu equipaje documentado será transferido automáticamente en Houston hacia tu destino final en San Francisco.
+                        </p>
+                        
+                        <div class="flight-timeline">
+                            <!-- Tramo 1 -->
+                            <div class="timeline-step">
+                                <div class="timeline-time">
+                                    07:00 AM
+                                    <span class="timeline-date">Martes, Jun 2</span>
+                                </div>
+                                <div style="font-weight: 700; font-size: 1.05rem;">Salida de San Juan (SJU)</div>
+                                <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Aeropuerto Internacional Luis Muñoz Marín</div>
+                                
+                                <div class="timeline-details">
+                                    <div>
+                                        <div class="timeline-detail-label">Aerolínea y Vuelo</div>
+                                        <div class="timeline-detail-val">United 1644</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Confirmación (UA)</div>
+                                        <div class="timeline-detail-val">FPXMKM</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Asiento</div>
+                                        <div class="timeline-detail-val" style="color: var(--primary);">30C</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Clase / Tarifa</div>
+                                        <div class="timeline-detail-val">Economy / Coach</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Llegada Tramo 1 -->
+                            <div class="timeline-step layover" style="margin-bottom: 15px;">
+                                <div class="timeline-time" style="font-size: 1.05rem; font-weight: 600;">
+                                    10:53 AM
+                                </div>
+                                <div style="font-weight: 600;">Llegada a Houston, TX (IAH)</div>
+                                <div style="color: var(--text-muted); font-size: 0.85rem;">Aeropuerto Intercontinental George Bush</div>
+                            </div>
+                            
+                            <!-- Layover -->
+                            <div class="layover-bar">
+                                <span>⏳ Escala de 2h 05m en Houston (IAH)</span>
+                            </div>
+                            
+                            <!-- Tramo 2 -->
+                            <div class="timeline-step">
+                                <div class="timeline-time">
+                                    12:58 PM
+                                    <span class="timeline-date">Martes, Jun 2</span>
+                                </div>
+                                <div style="font-weight: 700; font-size: 1.05rem;">Salida de Houston (IAH)</div>
+                                <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Aeropuerto Intercontinental George Bush</div>
+                                
+                                <div class="timeline-details">
+                                    <div>
+                                        <div class="timeline-detail-label">Aerolínea y Vuelo</div>
+                                        <div class="timeline-detail-val">United 2611</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Confirmación (UA)</div>
+                                        <div class="timeline-detail-val">FPXMKM</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Asiento</div>
+                                        <div class="timeline-detail-val" style="color: var(--primary);">32B</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Clase / Tarifa</div>
+                                        <div class="timeline-detail-val">Economy / Coach</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Llegada SFO -->
+                            <div class="timeline-step destination">
+                                <div class="timeline-time" style="color: var(--success);">
+                                    03:03 PM
+                                    <span class="timeline-date">Martes, Jun 2</span>
+                                </div>
+                                <div style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">Llegada a San Francisco, CA (SFO)</div>
+                                <div style="color: var(--text-muted); font-size: 0.9rem;">Aeropuerto Internacional de San Francisco</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Flight specs card -->
+                    <div class="info-card">
+                        <div class="info-card-title">🧳 Equipaje Permitido (Ida)</div>
+                        <ul class="info-list">
+                            <li class="info-list-item">
+                                <span class="info-list-label">Artículo Personal</span>
+                                <span class="info-list-value" style="color: var(--success);">Incluido (Bajo asiento)</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Equipaje de Mano</span>
+                                <span class="info-list-value" style="color: var(--success);">Incluido (Cabina)</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Equipaje Facturado</span>
+                                <span class="info-list-value">Aplica Cargo Adicional</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. TAB REGRESO -->
+        <div id="tab-regreso" class="tab-panel">
+            <div class="panel-grid">
+                <div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">🛬 Detalle del Viaje de Regreso</h2>
+                            <span class="card-badge" style="background: #2563eb;">JetBlue Airways</span>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 24px;">
+                            Tu viaje de regreso se realiza el día <strong>Viernes, 5 de Junio de 2026</strong> a través de JetBlue Airways, con una escala programada en Fort Lauderdale, Florida. Tu vuelo cuenta con la categoría de tarifa <strong>BLUE EXTRA</strong>.
+                        </p>
+                        
+                        <div class="flight-timeline">
+                            <!-- Regreso Tramo 1 -->
+                            <div class="timeline-step">
+                                <div class="timeline-time">
+                                    11:37 AM
+                                    <span class="timeline-date">Viernes, Jun 5</span>
+                                </div>
+                                <div style="font-weight: 700; font-size: 1.05rem;">Salida de San Francisco (SFO)</div>
+                                <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Aeropuerto Internacional de San Francisco</div>
+                                
+                                <div class="timeline-details">
+                                    <div>
+                                        <div class="timeline-detail-label">Aerolínea y Vuelo</div>
+                                        <div class="timeline-detail-val">JetBlue 378</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Confirmación (B6)</div>
+                                        <div class="timeline-detail-val">ERVCXP</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Asiento</div>
+                                        <div class="timeline-detail-val" style="color: var(--primary);">15D</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Clase / Tarifa</div>
+                                        <div class="timeline-detail-val">Blue Extra</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Llegada Tramo 1 -->
+                            <div class="timeline-step layover" style="margin-bottom: 15px;">
+                                <div class="timeline-time" style="font-size: 1.05rem; font-weight: 600;">
+                                    08:06 PM
+                                </div>
+                                <div style="font-weight: 600;">Llegada a Fort Lauderdale, FL (FLL)</div>
+                                <div style="color: var(--text-muted); font-size: 0.85rem;">Aeropuerto Internacional de Fort Lauderdale-Hollywood</div>
+                            </div>
+                            
+                            <!-- Layover -->
+                            <div class="layover-bar">
+                                <span>⏳ Escala de 1h 48m en Fort Lauderdale (FLL)</span>
+                            </div>
+                            
+                            <!-- Regreso Tramo 2 -->
+                            <div class="timeline-step">
+                                <div class="timeline-time">
+                                    09:54 PM
+                                    <span class="timeline-date">Viernes, Jun 5</span>
+                                </div>
+                                <div style="font-weight: 700; font-size: 1.05rem;">Salida de Fort Lauderdale (FLL)</div>
+                                <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Aeropuerto Internacional de Fort Lauderdale-Hollywood</div>
+                                
+                                <div class="timeline-details">
+                                    <div>
+                                        <div class="timeline-detail-label">Aerolínea y Vuelo</div>
+                                        <div class="timeline-detail-val">JetBlue 553</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Confirmación (B6)</div>
+                                        <div class="timeline-detail-val">ERVCXP</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Asiento</div>
+                                        <div class="timeline-detail-val" style="color: var(--primary);">14C</div>
+                                    </div>
+                                    <div>
+                                        <div class="timeline-detail-label">Clase / Tarifa</div>
+                                        <div class="timeline-detail-val">Blue Extra</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Llegada SJU -->
+                            <div class="timeline-step destination">
+                                <div class="timeline-time" style="color: var(--success);">
+                                    12:30 AM <sup style="font-size: 0.7em;">+1</sup>
+                                    <span class="timeline-date">Sábado, Jun 6</span>
+                                </div>
+                                <div style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary);">Llegada a San Juan, PR (SJU)</div>
+                                <div style="color: var(--text-muted); font-size: 0.9rem;">Aeropuerto Internacional Luis Muñoz Marín</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Flight specs card -->
+                    <div class="info-card">
+                        <div class="info-card-title">🧳 Equipaje & Beneficios (Regreso)</div>
+                        <ul class="info-list">
+                            <li class="info-list-item">
+                                <span class="info-list-label">Tipo de Tarifa</span>
+                                <span class="info-list-value" style="color: var(--secondary);">Blue Extra</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Artículo Personal</span>
+                                <span class="info-list-value" style="color: var(--success);">Incluido</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Equipaje de Mano</span>
+                                <span class="info-list-value" style="color: var(--success);">Incluido</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Cambios sin Cargo</span>
+                                <span class="info-list-value" style="color: var(--success);">Permitidos</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Abordaje</span>
+                                <span class="info-list-value">Prioritario (Early)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. TAB HOTEL -->
+        <div id="tab-hotel" class="tab-panel">
+            <div class="panel-grid">
+                <div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">🏨 Tu Estadía en el Hotel</h2>
+                            <span class="card-badge" style="background: var(--success);">Hampton Inn Hilton</span>
+                        </div>
+                        
+                        <div class="alert-callout" style="margin-top: 0;">
+                            <div class="alert-callout-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
+                                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                </svg>
+                                IMPORTANTE: Llegada Después de las 9:00 PM
+                            </div>
+                            <p style="font-size: 0.92rem;">
+                                Tu vuelo llega a SFO a las 3:03 PM, por lo que estarás haciendo check-in en un horario normal. Sin embargo, si surge algún retraso imprevisto y planeas ingresar al hotel <strong>después de las 9:00 PM</strong> el martes, debes comunicarte de inmediato al <strong>650-876-0200</strong> para registrar tu arribo tardío y evitar que cancelen tu habitación.
+                            </p>
+                        </div>
+
+                        <h3 style="font-family: 'Outfit', sans-serif; margin-bottom: 16px; margin-top: 24px;">🔑 Checklist de Llegada al Hotel</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
+                            Usa esta lista interactiva en tu teléfono cuando llegues a la recepción para asegurarte de que todo transcurra sin inconvenientes:
+                        </p>
+                        
+                        <div class="checklist-container">
+                            <div class="checklist-item" onclick="toggleChecklist(this)">
+                                <div class="checklist-checkbox">✓</div>
+                                <div class="checklist-content">
+                                    <div class="checklist-item-title">Menciona el Nombre de la Reserva: Luis Ortiz</div>
+                                    <div class="checklist-desc">Aunque la reserva fue pre-pagada por Eric Munoz, la habitación principal está a nombre de Luis Ortiz.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="checklist-item" onclick="toggleChecklist(this)">
+                                <div class="checklist-checkbox">✓</div>
+                                <div class="checklist-content">
+                                    <div class="checklist-item-title">Presenta tu Identificación Oficial y Tarjeta de Crédito</div>
+                                    <div class="checklist-desc">Debes mostrar un pasaporte o licencia de conducir física vigente junto con una tarjeta de crédito física a tu nombre para cargos adicionales.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="checklist-item" onclick="toggleChecklist(this)">
+                                <div class="checklist-checkbox">✓</div>
+                                <div class="checklist-content">
+                                    <div class="checklist-item-title">Procesamiento de Depósito de Garantía ($50 USD)</div>
+                                    <div class="checklist-desc">El hotel retendrá un depósito reembolsable de USD $50.00 en tu tarjeta de crédito que será devuelto al momento del checkout.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="checklist-item" onclick="toggleChecklist(this)">
+                                <div class="checklist-checkbox">✓</div>
+                                <div class="checklist-content">
+                                    <div class="checklist-item-title">Menciona el Pre-Pago por Priceline/Agoda (si es necesario)</div>
+                                    <div class="checklist-desc">Si hay algún problema en el sistema, indica que tu reserva fue realizada por Priceline (Agoda) con el ID de viaje 352-671-753-96.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="checklist-item" onclick="toggleChecklist(this)">
+                                <div class="checklist-checkbox">✓</div>
+                                <div class="checklist-content">
+                                    <div class="checklist-item-title">Confirma los Beneficios Gratuitos de tu Estadía</div>
+                                    <div class="checklist-desc">Asegúrate de que te den la clave del WiFi gratis y te informen sobre el horario del desayuno diario de cortesía.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Hotel Details Sidebar Card -->
+                    <div class="info-card">
+                        <div class="info-card-title">ℹ️ Detalles de la Reserva</div>
+                        <ul class="info-list">
+                            <li class="info-list-item">
+                                <span class="info-list-label">Check-in</span>
+                                <span class="info-list-value">Jun 2, 2026 (4:00 PM)</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Check-out</span>
+                                <span class="info-list-value">Jun 5, 2026 (12:00 PM)</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Noches</span>
+                                <span class="info-list-value">3 noches</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Habitación</span>
+                                <span class="info-list-value" style="font-size: 0.82rem;">Premium Queen with 2 Queen Beds (No Fumar)</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Adultos</span>
+                                <span class="info-list-value">1</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Desayuno</span>
+                                <span class="info-list-value" style="color: var(--success); font-weight: bold;">Incluido (Gratis)</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Internet WiFi</span>
+                                <span class="info-list-value" style="color: var(--success); font-weight: bold;">Incluido (Gratis)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. TAB SEGURO -->
+        <div id="tab-seguro" class="tab-panel">
+            <div class="panel-grid">
+                <div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">🛡️ Seguro de Viaje (Travel Guard)</h2>
+                            <span class="card-badge" style="background: var(--primary);">Activo</span>
+                        </div>
+                        <p style="margin-bottom: 20px;">
+                            Tu viaje está cubierto por una póliza activa de **Travel Guard** (AIG), el cual provee asistencia y reembolsos para interrupciones médicas, retrasos y pérdidas de equipaje durante todo el itinerario.
+                        </p>
+                        
+                        <div class="timeline-details" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 24px;">
+                            <div>
+                                <div class="timeline-detail-label">Nombre del Seguro</div>
+                                <div class="timeline-detail-val">Flight Protection Plan</div>
+                            </div>
+                            <div>
+                                <div class="timeline-detail-label">Número de Póliza</div>
+                                <div class="timeline-detail-val" style="color: var(--primary);">1002495146</div>
+                            </div>
+                            <div>
+                                <div class="timeline-detail-label">Proveedor Principal</div>
+                                <div class="timeline-detail-val">Travel Guard (Expedia)</div>
+                            </div>
+                            <div>
+                                <div class="timeline-detail-label">Contacto Soporte</div>
+                                <div class="timeline-detail-val">855-400-2624</div>
+                            </div>
+                        </div>
+                        
+                        <h3 style="font-family: 'Outfit', sans-serif; margin-bottom: 16px;">💵 Resumen Financiero Consolidado</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
+                            Detalle total de los gastos pre-pagados asociados a esta reservación (Cargados el 27 de Mayo de 2026):
+                        </p>
+                        
+                        <table class="finance-table">
+                            <thead>
+                                <tr>
+                                    <th>Concepto</th>
+                                    <th>Proveedor</th>
+                                    <th>Costo Unitario</th>
+                                    <th>Total Cobrado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pasajes Aéreos Ida/Vuelta (1 Adulto)</td>
+                                    <td>Expedia (UA/B6)</td>
+                                    <td>$881.91 USD</td>
+                                    <td style="font-weight: 700;">$881.91 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>Impuestos y Tasas Gubernamentales Vuelos</td>
+                                    <td>Expedia</td>
+                                    <td>$76.00 USD</td>
+                                    <td style="font-weight: 700;">$76.00 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>Selección de Asientos Específicos</td>
+                                    <td>Expedia</td>
+                                    <td>$79.00 USD</td>
+                                    <td style="font-weight: 700;">$79.00 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>Cargo por servicio de selección de asiento</td>
+                                    <td>Expedia</td>
+                                    <td>$3.95 USD</td>
+                                    <td style="font-weight: 700;">$3.95 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>Seguro de Viaje (Flight Protection Plan)</td>
+                                    <td>Travel Guard</td>
+                                    <td>$127.40 USD</td>
+                                    <td style="font-weight: 700;">$127.40 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>Hospedaje de Hotel (3 noches en South SF)</td>
+                                    <td>Priceline (Agoda)</td>
+                                    <td>$216.55 USD / noche</td>
+                                    <td style="font-weight: 700;">$649.65 USD</td>
+                                </tr>
+                                <tr>
+                                    <td>Tasas, Impuestos y Cargos de Hotel</td>
+                                    <td>Priceline</td>
+                                    <td>$107.82 USD</td>
+                                    <td style="font-weight: 700;">$107.82 USD</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td colspan="3">Monto Consolidado Pre-pagado</td>
+                                    <td>$1,925.73 USD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Insurance quick contact card -->
+                    <div class="info-card">
+                        <div class="info-card-title">📞 Teléfonos de Emergencia</div>
+                        <ul class="info-list">
+                            <li class="info-list-item">
+                                <span class="info-list-label">Soporte Póliza AIG</span>
+                                <span class="info-list-value">855-400-2624</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Expedia Clientes</span>
+                                <span class="info-list-value">866-316-0357</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Soporte Internacional</span>
+                                <span class="info-list-value">404-728-8787</span>
+                            </li>
+                        </ul>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 14px; text-align: center;">
+                            * Recuerda ingresar a la web de Travel Guard con tu apellido y el número de póliza para realizar reclamaciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Interactive Logic & State Preservation Javascript -->
+    <script>
+        // Tab switching logic
+        function switchTab(event, tabId) {
+            // Hide all tab panels
+            const tabPanels = document.querySelectorAll('.tab-panel');
+            tabPanels.forEach(panel => {
+                panel.classList.remove('active');
+            });
+
+            // Deactivate all tab buttons
+            const tabButtons = document.querySelectorAll('.nav-tab-btn');
+            tabButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+
+            // Show target tab panel
+            const targetPanel = document.getElementById(tabId);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+
+            // Activate target button
+            if (event && event.currentTarget) {
+                event.currentTarget.classList.add('active');
+                event.currentTarget.setAttribute('aria-selected', 'true');
+            }
+        }
+
+        // Interactive Checklist State Management
+        document.addEventListener("DOMContentLoaded", function() {
+            loadChecklistState();
+            setupThemeToggle();
+        });
+
+        function toggleChecklist(element) {
+            element.classList.toggle('checked');
+            saveChecklistState();
+        }
+
+        function saveChecklistState() {
+            const items = document.querySelectorAll('.checklist-item');
+            const state = [];
+            items.forEach((item, index) => {
+                state.push({
+                    index: index,
+                    checked: item.classList.contains('checked')
+                });
+            });
+            localStorage.setItem('luis_sf_checklist', JSON.stringify(state));
+        }
+
+        function loadChecklistState() {
+            const savedState = localStorage.getItem('luis_sf_checklist');
+            if (savedState) {
+                const state = JSON.parse(savedState);
+                const items = document.querySelectorAll('.checklist-item');
+                state.forEach(itemState => {
+                    if (items[itemState.index]) {
+                        if (itemState.checked) {
+                            items[itemState.index].classList.add('checked');
+                        } else {
+                            items[itemState.index].classList.remove('checked');
+                        }
+                    }
+                });
+            }
+        }
+
+        // Sleek Theme Toggle Logic (Light / Dark)
+        function setupThemeToggle() {
+            const toggleBtn = document.getElementById('theme-toggle');
+            const toggleIcon = document.getElementById('theme-toggle-icon');
+            const toggleText = document.getElementById('theme-text');
+            const body = document.body;
+
+            // Load saved theme preference
+            const savedTheme = localStorage.getItem('itinerary-theme') || 'light';
+            body.setAttribute('data-theme', savedTheme);
+            updateThemeUI(savedTheme);
+
+            toggleBtn.addEventListener('click', function() {
+                const currentTheme = body.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                
+                body.setAttribute('data-theme', newTheme);
+                localStorage.setItem('itinerary-theme', newTheme);
+                updateThemeUI(newTheme);
+            });
+
+            function updateThemeUI(theme) {
+                if (theme === 'dark') {
+                    toggleText.textContent = 'Modo Claro';
+                    toggleIcon.innerHTML = `
+                        <!-- Sun Icon -->
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.22" x2="5.64" y2="17.78"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    `;
+                } else {
+                    toggleText.textContent = 'Modo Oscuro';
+                    toggleIcon.innerHTML = `
+                        <!-- Moon Icon -->
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    `;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
