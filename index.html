@@ -990,6 +990,11 @@
                         🛡️ Seguro & Finanzas
                     </button>
                 </li>
+                <li class="nav-tab-item">
+                    <button class="nav-tab-btn" onclick="switchTab(event, 'tab-actividades')" role="tab" aria-selected="false">
+                        🌆 Ocio & Cenas
+                    </button>
+                </li>
             </ul>
 
             <!-- Quick Information Grid -->
@@ -1748,6 +1753,213 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- 7. TAB ACTIVIDADES & OCIO -->
+        <div id="tab-actividades" class="tab-panel">
+            <div class="panel-grid">
+                <div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">🌆 Itinerario Nocturno (Una Actividad + Una Cena por Día)</h2>
+                            <span class="card-badge" style="background: var(--secondary);">Budget-Friendly & Sin Lácteos</span>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 24px;">
+                            Hola Luis, he diseñado una agenda nocturna a la medida de tus tiempos disponibles después de la conferencia. Como tu tiempo es limitado y tus días son pesados, me he limitado a **una actividad y una gran experiencia gastronómica por noche**, manteniendo la cena bajo tu presupuesto de **$80 - $85 USD** y cuidando estrictamente tu intolerancia a las cremas, mantequillas y salsas blancas. ¡Todos los lugares recomendados son sumamente cool y aceptan **tarjetas de crédito Visa**!
+                        </p>
+
+                        <!-- DIA 1: MARTES 2 DE JUNIO -->
+                        <div style="border-left: 3px solid var(--primary); padding-left: 20px; margin-bottom: 40px; position: relative;">
+                            <div style="position: absolute; left: -9px; top: 0; width: 15px; height: 15px; border-radius: 50%; background: var(--primary);"></div>
+                            <span class="tag" style="background: rgba(37, 99, 235, 0.1); color: var(--primary); font-size: 0.8rem; font-weight: 700; margin-bottom: 8px;">MARTES, 2 DE JUNIO: LLEGADA & CENA EN LA PENÍNSULA</span>
+                            
+                            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-top: 8px; margin-bottom: 12px;">🌅 Relajación tras el Vuelo en Oyster Point</h3>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 16px;">
+                                <!-- Actividad -->
+                                <div style="background: var(--bg-tertiary); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+                                    <h4 style="font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+                                        <span>🚶‍♂️</span> Actividad: Paseo al Atardecer por la Marina de Oyster Point
+                                    </h4>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">
+                                        Una marina hermosa y pacífica ubicada justo al lado de tu hotel. Ideal para caminar, respirar aire fresco del Pacífico después de tus dos vuelos y estirar las piernas sin necesidad de trasladarte en auto.
+                                    </p>
+                                    <div style="font-size: 0.82rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 12px;">
+                                        <span>📍 <strong>Ubicación:</strong> Oyster Point Marina, South SF</span>
+                                        <span>⏱️ <strong>Distancia:</strong> 0.4 millas (10-12 min a pie)</span>
+                                        <span>💵 <strong>Costo:</strong> Gratis (Público)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Cena -->
+                                <div style="background: var(--bg-tertiary); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+                                    <h4 style="font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; color: var(--primary);">
+                                        <span>🥩</span> Cena Carnívora: The Landing Restaurant & Bar
+                                    </h4>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">
+                                        Ubicado en el hotel colindante, es ideal para una primera noche tranquila. Destaca por su **Grilled Dry-Aged Prime Ribeye Steak**, un corte excelente añejado en seco a la parrilla.
+                                    </p>
+                                    <div style="font-size: 0.82rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+                                        <span>📍 <strong>Ubicación:</strong> 400 Oyster Point Blvd</span>
+                                        <span>⏱️ <strong>Distancia:</strong> 0.3 millas (8 min a pie / 1 min en Uber)</span>
+                                        <span>💵 <strong>Precio Ribeye:</strong> ~$48 - $55 USD</span>
+                                        <span>💳 <strong>Visa:</strong> Aceptada</span>
+                                    </div>
+                                    
+                                    <div class="alert-callout" style="margin-top: 8px; background: rgba(239, 68, 68, 0.05); border-color: rgba(239, 68, 68, 0.2); padding: 12px;">
+                                        <div class="alert-callout-title" style="color: #ef4444; font-size: 0.85rem; font-weight: 700;">
+                                            🛡️ Alerta Lácteos (The Landing):
+                                        </div>
+                                        <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0; line-height: 1.3;">
+                                            Indica al mesero que prepare tu corte de carne a la parrilla <strong>totalmente seco (sin mantequilla pincelada encima)</strong>. Pide como guarnición vegetales salteados <strong>únicamente en aceite de oliva</strong> o papas fritas. Evita el puré de papas por completo (siempre lleva crema y mantequilla).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DIA 2: MIERCOLES 3 DE JUNIO -->
+                        <div style="border-left: 3px solid var(--secondary); padding-left: 20px; margin-bottom: 40px; position: relative;">
+                            <div style="position: absolute; left: -9px; top: 0; width: 15px; height: 15px; border-radius: 50%; background: var(--secondary);"></div>
+                            <span class="tag" style="background: rgba(139, 92, 246, 0.1); color: var(--secondary); font-size: 0.8rem; font-weight: 700; margin-bottom: 8px;">MIÉRCOLES, 3 DE JUNI0: ATARDECER EN LA BAHÍA & SUSHI DE VANGUARDIA</span>
+                            
+                            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-top: 8px; margin-bottom: 12px;">🌉 Atardecer y Vistas al Puente desde el Embarcadero</h3>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 16px;">
+                                <!-- Actividad -->
+                                <div style="background: var(--bg-tertiary); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+                                    <h4 style="font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+                                        <span>🚶‍♂️</span> Actividad: Paseo y Atardecer en The Embarcadero & Ferry Building
+                                    </h4>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">
+                                        Al terminar la conferencia en The Midway (~5:30 - 6:00 PM), dirígete en Uber al emblemático Ferry Building. Podrás caminar por el muelle al atardecer (el sol se oculta a las 8:30 PM) y contemplar las impresionantes vistas del puente Oakland Bay Bridge y sus luces.
+                                    </p>
+                                    <div style="font-size: 0.82rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 12px;">
+                                        <span>📍 <strong>Ubicación:</strong> 1 Ferry Building, San Francisco</span>
+                                        <span>🚗 <strong>Traslado:</strong> ~12 min en Uber desde The Midway (~$12-$15 USD)</span>
+                                        <span>💵 <strong>Costo:</strong> Gratis (Acceso libre)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Cena -->
+                                <div style="background: var(--bg-tertiary); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+                                    <h4 style="font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; color: var(--secondary);">
+                                        <span>🍣</span> Cena Sushi Trendy: Ozumo (Sleek Bayside Lounge)
+                                    </h4>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">
+                                        Un restaurante de sushi súper "cool", moderno y lleno de energía, ubicado justo en el Embarcadero. Su ambiente es espectacular y ofrece una barra de sushi y sake de primer nivel.
+                                    </p>
+                                    <div style="font-size: 0.82rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+                                        <span>📍 <strong>Ubicación:</strong> 161 Steuart St, San Francisco</span>
+                                        <span>🚶‍♂️ <strong>Distancia:</strong> 3 min caminando desde el Ferry Building</span>
+                                        <span>💵 <strong>Precio Promedio:</strong> ~$50 - $75 USD (perfecto para ordenar a la carta y cuidar el budget)</span>
+                                        <span>💳 <strong>Visa:</strong> Aceptada</span>
+                                    </div>
+                                    
+                                    <div class="alert-callout" style="margin-top: 8px; background: rgba(239, 68, 68, 0.05); border-color: rgba(239, 68, 68, 0.2); padding: 12px;">
+                                        <div class="alert-callout-title" style="color: #ef4444; font-size: 0.85rem; font-weight: 700;">
+                                            🛡️ Alerta Lácteos (Ozumo):
+                                        </div>
+                                        <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0; line-height: 1.3;">
+                                            El sushi tradicional de alta gama es naturalmente libre de lácteos. No obstante, **evita rollos occidentales que contengan queso crema (cream cheese)** o aderezos cremosos como *Spicy Mayo* o *Yum Yum*. Pide nigiris frescos, sashimi variado y rollos limpios de atún, salmón o hamachi con aguacate.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DIA 3: JUEVES 4 DE JUNIO -->
+                        <div style="border-left: 3px solid #10b981; padding-left: 20px; position: relative;">
+                            <div style="position: absolute; left: -9px; top: 0; width: 15px; height: 15px; border-radius: 50%; background: #10b981;"></div>
+                            <span class="tag" style="background: rgba(16, 185, 129, 0.1); color: #10b981; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px;">JUEVES, 4 DE JUNI0: ARTE MODERNO DE CLASE MUNDIAL & CARNES DE AUTOR</span>
+                            
+                            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-top: 8px; margin-bottom: 12px;">🎨 Inmersión Cultural en SFMOMA & Cena Espectacular</h3>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 16px;">
+                                <!-- Actividad -->
+                                <div style="background: var(--bg-tertiary); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+                                    <h4 style="font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+                                        <span>🏛️</span> Actividad: SFMOMA (Museo de Arte Moderno de San Francisco)
+                                    </h4>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">
+                                        ¡Aprovecha que los jueves abre en horario extendido hasta las 8:00 PM! Al salir de la conferencia a las 6:00 PM, toma un Uber de 10 minutos al museo. Tendrás casi dos horas (6:15 PM a 8:00 PM) para recorrer colecciones de arte moderno mundialmente célebres.
+                                    </p>
+                                    <div style="font-size: 0.82rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 12px;">
+                                        <span>📍 <strong>Ubicación:</strong> 151 3rd St, San Francisco</span>
+                                        <span>🚗 <strong>Traslado:</strong> ~10 min en Uber desde The Midway (~$10-$12 USD)</span>
+                                        <span>💵 <strong>Precio Entrada:</strong> $30 USD (puedes comprarlo online)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Cena -->
+                                <div style="background: var(--bg-tertiary); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+                                    <h4 style="font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; color: #10b981;">
+                                        <span>🔥</span> Cena Carnes de Autor: International Smoke
+                                    </h4>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">
+                                        Un restaurante de leña y barbacoa gourmet súper cotizado y con un diseño increíblemente cool, creado por el afamado Chef Michael Mina y Ayesha Curry. Destaca por sus costillas ahumadas, brisket y cortes jugosos al fuego.
+                                    </p>
+                                    <div style="font-size: 0.82rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+                                        <span>📍 <strong>Ubicación:</strong> 301 Mission St, San Francisco</span>
+                                        <span>🚶‍♂️ <strong>Distancia:</strong> 5 min caminando (2 cuadras) desde SFMOMA</span>
+                                        <span>💵 <strong>Precio Promedio:</strong> ~$45 - $70 USD (un plato fuerte y una gran bebida entran perfecto en el budget)</span>
+                                        <span>💳 <strong>Visa:</strong> Aceptada</span>
+                                    </div>
+                                    
+                                    <div class="alert-callout" style="margin-top: 8px; background: rgba(239, 68, 68, 0.05); border-color: rgba(239, 68, 68, 0.2); padding: 12px;">
+                                        <div class="alert-callout-title" style="color: #ef4444; font-size: 0.85rem; font-weight: 700;">
+                                            🛡️ Alerta Lácteos (International Smoke):
+                                        </div>
+                                        <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0; line-height: 1.3;">
+                                            Indica claramente a tu mesero que tienes intolerancia severa a la mantequilla y la crema de leche. Evita el famoso puré de papas y el pan de maíz (cornbread - lleva mantequilla). Las carnes ahumadas al estilo Texas o las costillas con salsa BBQ a base de tomate son excelentes opciones libres de lácteos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Quick Specs sidebar for nights -->
+                    <div class="info-card" style="position: sticky; top: 120px;">
+                        <div class="info-card-title">📝 Resumen del Plan Nocturno</div>
+                        <ul class="info-list">
+                            <li class="info-list-item">
+                                <span class="info-list-label">Presupuesto / Noche</span>
+                                <span class="info-list-value" style="color: var(--success); font-weight: 800;">$80 - $85 USD max</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Medio de Pago</span>
+                                <span class="info-list-value" style="color: var(--primary); font-weight: 700;">Visa (100% Aceptada)</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Estilo de Agenda</span>
+                                <span class="info-list-value">1 Actividad + 1 Cena / Día</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Preferencias</span>
+                                <span class="info-list-value" style="font-size: 0.85rem;">Sushi de Autor & Carnes</span>
+                            </li>
+                            <li class="info-list-item">
+                                <span class="info-list-label">Intolerancia Médica</span>
+                                <span class="info-list-value" style="color: #ef4444; font-weight: 700; font-size: 0.8rem;">Cremas, Salsas Blancas & Mantequilla</span>
+                            </li>
+                        </ul>
+
+                        <div style="background: var(--bg-tertiary); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border); margin-top: 20px;">
+                            <h4 style="font-weight: 700; font-size: 0.85rem; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                                <span>🗣️</span> Frase Clave en Inglés:
+                            </h4>
+                            <p style="font-size: 0.8rem; line-height: 1.4; color: var(--text-secondary); font-style: italic; margin: 0; background: var(--bg-secondary); padding: 10px; border-radius: 4px; border-left: 3px solid var(--primary);">
+                                "I am severely intolerant to dairy, butter, and cream. Please make sure my food contains absolutely no butter, whipped cream, or white/cream sauces."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
     </main>
