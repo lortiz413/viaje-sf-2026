@@ -734,28 +734,26 @@
             font-weight: 700;
         }
 
-        /* FIXED: Adaptable QR code placeholder to fit user's rectangular 254x368 cropped QR code image perfectly without squishing it */
+        /* FIXED: Proportional rounded white container to fit the user's cropped ticket QR code */
         .qr-placeholder {
-            width: 145px;
-            height: 175px;
+            width: 126px;
+            height: 176px;
             background: #ffffff;
-            padding: 10px;
+            padding: 8px;
             border-radius: var(--radius-sm);
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
         }
 
-        /* FIXED: Set image width auto, max-height 120px, and object-fit contain to maintain pristine original aspect ratio on both Mobile and Desktop */
+        /* FIXED: Set static dimensions matching the 254x368 aspect ratio to force Safari on iOS to render it perfectly square/rectangular without compression bugs */
         .qr-image {
-            max-width: 100%;
-            max-height: 125px;
-            width: auto;
-            height: auto;
-            object-fit: contain;
+            width: 110px;
+            height: 160px;
             display: block;
+            object-fit: fill;
         }
 
         /* Print Layout Rules */
@@ -1319,11 +1317,9 @@
                             
                             <div class="ticket-stub">
                                 <div class="ticket-label" style="text-align: center; margin-bottom: 8px;">Código Acceso</div>
-                                <!-- FIXED: Adjusted placeholder to be 145x175 to perfectly frame the rectangular original QR Code -->
                                 <div class="qr-placeholder">
-                                    <!-- FIXED: relative image tag that scales cleanly keeping aspect ratio without squishing -->
+                                    <!-- Dynamic Real scannable QR Image (fixed scaling) -->
                                     <img src="qr_code.png" alt="Código QR C8FKSL63T" class="qr-image" />
-                                    <span style="font-family: 'Outfit'; font-size: 0.75rem; font-weight: 800; color: #0f172a; margin-top: 6px; letter-spacing: 0.05em;">C8FKSL63T</span>
                                 </div>
                                 <div class="ticket-label" style="margin-top: 12px; font-size: 0.65rem; opacity: 0.7; text-align: center;">Universe Ticketmaster</div>
                             </div>
