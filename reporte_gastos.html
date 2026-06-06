@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reporte de Gastos - San Francisco 2026 (UPSCALE CONFERENCE)</title>
-    <meta name="description" content="Reporte de gastos detallado para la contabilidad del viaje de negocios a San Francisco. Cuentas de Uber, alimentos y hotel.">
+    <meta name="description" content="Reporte de gastos detallado para la contabilidad del viaje de negocios a San Francisco. Cuentas de Uber, alimentos y estacionamiento.">
     <!-- Google Fonts: Inter & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -684,15 +684,15 @@
                     </div>
                     <div class="stat-card">
                         <div class="stat-info">
-                            <span class="stat-label">Depósito Hotel</span>
-                            <span class="stat-val" id="hotelSubtotal">$0.00 USD</span>
+                            <span class="stat-label">Estacionamiento SJU</span>
+                            <span class="stat-val" id="parkingSubtotal">$60.00 USD</span>
                         </div>
-                        <div class="stat-icon">🏨</div>
+                        <div class="stat-icon">🅿️</div>
                     </div>
                     <div class="stat-card total">
                         <div class="stat-info">
                             <span class="stat-label">Total Reembolso</span>
-                            <span class="stat-val" id="grandTotal">$482.78 USD</span>
+                            <span class="stat-val" id="grandTotal">$542.78 USD</span>
                         </div>
                         <div class="stat-icon">💰</div>
                     </div>
@@ -704,7 +704,7 @@
         <ul class="category-tabs">
             <li><button class="tab-btn active" onclick="switchCategory('uber')">🚗 Uber (9 Recibos)</button></li>
             <li><button class="tab-btn" onclick="switchCategory('food')">🍔 Alimentos (4 Recibos)</button></li>
-            <li><button class="tab-btn" onclick="switchCategory('hotel')">🏨 Hotel Deposit (Pendiente)</button></li>
+            <li><button class="tab-btn" onclick="switchCategory('parking')">🅿️ Estacionamiento SJU (1 Recibo)</button></li>
         </ul>
 
         <!-- UBER CATEGORY PANEL -->
@@ -999,12 +999,44 @@
             </div>
         </div>
 
-        <!-- HOTEL PANEL -->
-        <div id="hotel" class="category-panel">
-            <div class="empty-state">
-                <div class="empty-icon">🏨</div>
-                <h2>Gastos de Depósito de Hotel Pendientes</h2>
-                <p>Aún no se ha recibido el comprobante de depósito de hotel y cargos incidentales del Hampton Inn By Hilton San Francisco-Airport. Esta sección se habilitará una vez cargado el recibo.</p>
+        <!-- PARKING PANEL -->
+        <div id="parking" class="category-panel">
+            <div class="panel-layout">
+                <!-- Left: List of receipts -->
+                <div class="expense-list">
+                    
+                    <!-- Item 1 -->
+                    <div class="expense-card" onclick="previewReceipt('SJU PARK NAND RIDE (ALOJAMIENTO DEL AUTO)/IMG_0146_optimized.png', 'Estacionamiento #1 - SJU Park and Ride ($60.00)')">
+                        <div class="card-heading">
+                            <h3>#1: Estacionamiento a Largo Plazo SJU</h3>
+                            <span class="card-amount">$60.00</span>
+                        </div>
+                        <div class="details-grid">
+                            <div class="detail-item"><span class="detail-label">Fecha y Hora</span><span class="detail-val">Jun 6, 2026 - 1:08 AM</span></div>
+                            <div class="detail-item"><span class="detail-label">Comprobante / Ticket</span><span class="detail-val">Ticket: 119662</span></div>
+                        </div>
+                        <div class="description-box">
+                            Estacionamiento a largo plazo del automóvil en SJU Park & Ride durante el viaje de negocios a San Francisco (del 2 al 6 de junio de 2026).
+                        </div>
+                        <div>
+                            <span class="detail-label">Establecimiento</span>
+                            <span class="route-val">SJU Park and Ride, Mall of San Juan</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right: Interactive Sticky receipt previewer -->
+                <div class="receipt-preview-container">
+                    <h3 class="receipt-preview-title" id="previewTitleParking">Vista Digital del Comprobante</h3>
+                    <div class="receipt-image-frame" onclick="openLightbox()">
+                        <img src="SJU PARK NAND RIDE (ALOJAMIENTO DEL AUTO)/IMG_0146_optimized.png" alt="Recibo Estacionamiento SJU" class="receipt-img" id="previewImgParking">
+                        <div class="zoom-overlay">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Click para Ampliar
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
