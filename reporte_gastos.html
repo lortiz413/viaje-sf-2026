@@ -678,7 +678,7 @@
                     <div class="stat-card">
                         <div class="stat-info">
                             <span class="stat-label">Gastos Alimentos</span>
-                            <span class="stat-val" id="foodSubtotal">$0.00 USD</span>
+                            <span class="stat-val" id="foodSubtotal">$249.16 USD</span>
                         </div>
                         <div class="stat-icon">🍔</div>
                     </div>
@@ -692,7 +692,7 @@
                     <div class="stat-card total">
                         <div class="stat-info">
                             <span class="stat-label">Total Reembolso</span>
-                            <span class="stat-val" id="grandTotal">$233.62 USD</span>
+                            <span class="stat-val" id="grandTotal">$482.78 USD</span>
                         </div>
                         <div class="stat-icon">💰</div>
                     </div>
@@ -703,7 +703,7 @@
         <!-- Category Tab Buttons -->
         <ul class="category-tabs">
             <li><button class="tab-btn active" onclick="switchCategory('uber')">🚗 Uber (9 Recibos)</button></li>
-            <li><button class="tab-btn" onclick="switchCategory('food')">🍔 Alimentos (Pendiente)</button></li>
+            <li><button class="tab-btn" onclick="switchCategory('food')">🍔 Alimentos (4 Recibos)</button></li>
             <li><button class="tab-btn" onclick="switchCategory('hotel')">🏨 Hotel Deposit (Pendiente)</button></li>
         </ul>
 
@@ -903,10 +903,99 @@
 
         <!-- FOOD PANEL -->
         <div id="food" class="category-panel">
-            <div class="empty-state">
-                <div class="empty-icon">🍔</div>
-                <h2>Gastos de Alimentos Pendientes</h2>
-                <p>Aún no se han recibido los comprobantes de gastos de alimentos. La información y totales se actualizarán dinámicamente tan pronto sean cargados.</p>
+            <div class="panel-layout">
+                <!-- Left: List of receipts -->
+                <div class="expense-list">
+                    
+                    <!-- Item 1 -->
+                    <div class="expense-card" onclick="previewReceipt('COMIDA/IMG_0144.png', 'Alimentos #1 - DoubleTree Restaurant ($97.78)')">
+                        <div class="card-heading">
+                            <h3>#1: Cena (Restaurante DoubleTree)</h3>
+                            <span class="card-amount">$97.78</span>
+                        </div>
+                        <div class="details-grid">
+                            <div class="detail-item"><span class="detail-label">Fecha y Hora</span><span class="detail-val">Jun 2, 2026 - 8:28 PM</span></div>
+                            <div class="detail-item"><span class="detail-label">Mesero y Servicio</span><span class="detail-val">Mary M (Dine-in)</span></div>
+                        </div>
+                        <div class="description-box">
+                            Cena en el restaurante del hotel DoubleTree (cerca del hotel Hampton Inn) el 2 de junio.
+                        </div>
+                        <div>
+                            <span class="detail-label">Establecimiento</span>
+                            <span class="route-val">DoubleTree SF Airport (275 S Airport Blvd)</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="expense-card" onclick="previewReceipt('COMIDA/IMG_0142.png', 'Alimentos #2 - Ozumo Restaurant ($77.15)')">
+                        <div class="card-heading">
+                            <h3>#2: Cena (Restaurante Ozumo)</h3>
+                            <span class="card-amount">$77.15</span>
+                        </div>
+                        <div class="details-grid">
+                            <div class="detail-item"><span class="detail-label">Fecha y Hora</span><span class="detail-val">Jun 3, 2026 - 5:57 PM</span></div>
+                            <div class="detail-item"><span class="detail-label">Mesero y Servicio</span><span class="detail-val">Defrantz C (Dine-in)</span></div>
+                        </div>
+                        <div class="description-box">
+                            Cena de negocios y networking en el restaurante Ozumo (cerca de la conferencia) el 3 de junio.
+                        </div>
+                        <div>
+                            <span class="detail-label">Establecimiento</span>
+                            <span class="route-val">Ozumo - San Francisco (161 Steuart St)</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="expense-card" onclick="previewReceipt('COMIDA/IMG_uber_eats.png', 'Alimentos #3 - Ocean Fish Sushi Uber Eats ($41.27)')">
+                        <div class="card-heading">
+                            <h3>#3: Cena Delivery (Uber Eats)</h3>
+                            <span class="card-amount">$41.27</span>
+                        </div>
+                        <div class="details-grid">
+                            <div class="detail-item"><span class="detail-label">Fecha y Hora</span><span class="detail-val">Jun 4, 2026 - 7:29 PM</span></div>
+                            <div class="detail-item"><span class="detail-label">Servicio</span><span class="detail-val">Uber Delivery</span></div>
+                        </div>
+                        <div class="description-box">
+                            Cena de comida japonesa (Uber Eats) entregada en el hotel el 4 de junio.
+                        </div>
+                        <div>
+                            <span class="detail-label">Establecimiento y Entrega</span>
+                            <span class="route-val">Ocean Fish Sushi & Grill ➔ Hampton Inn (300 Gateway Blvd)</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="expense-card" onclick="previewReceipt('COMIDA/IMG_0145.png', 'Alimentos #4 - Hampton Inn Gift Shop ($32.96)')">
+                        <div class="card-heading">
+                            <h3>#4: Compras Tienda Hotel (Snacks)</h3>
+                            <span class="card-amount">$32.96</span>
+                        </div>
+                        <div class="details-grid">
+                            <div class="detail-item"><span class="detail-label">Fecha</span><span class="detail-val">Jun 4, 2026</span></div>
+                            <div class="detail-item"><span class="detail-label">Servicio</span><span class="detail-val">Tienda Hotel (Pantry)</span></div>
+                        </div>
+                        <div class="description-box">
+                            Compra de alimentos/bebidas en la tienda del hotel (Hampton Inn Gift Shop).
+                        </div>
+                        <div>
+                            <span class="detail-label">Establecimiento</span>
+                            <span class="route-val">Hampton Inn Gift Shop (300 Gateway Blvd)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right: Interactive Sticky receipt previewer -->
+                <div class="receipt-preview-container">
+                    <h3 class="receipt-preview-title" id="previewTitleFood">Vista Digital del Comprobante</h3>
+                    <div class="receipt-image-frame" onclick="openLightbox()">
+                        <img src="COMIDA/IMG_0144.png" alt="Recibo Comida" class="receipt-img" id="previewImgFood">
+                        <div class="zoom-overlay">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Click para Ampliar
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -972,8 +1061,13 @@
 
         // Interactive Receipt Preview
         function previewReceipt(imgPath, titleText) {
-            document.getElementById('previewImg').src = imgPath;
-            document.getElementById('previewTitle').innerText = titleText;
+            const activePanel = document.querySelector('.category-panel.active');
+            if (activePanel) {
+                const img = activePanel.querySelector('.receipt-img');
+                const title = activePanel.querySelector('.receipt-preview-title');
+                if (img) img.src = imgPath;
+                if (title) title.innerText = titleText;
+            }
         }
 
         // Lightbox Zoom Logic
@@ -981,9 +1075,14 @@
         const lightboxImg = document.getElementById('lightboxImg');
 
         function openLightbox() {
-            const currentImgSrc = document.getElementById('previewImg').src;
-            lightboxImg.src = currentImgSrc;
-            lightbox.classList.add('active');
+            const activePanel = document.querySelector('.category-panel.active');
+            if (activePanel) {
+                const img = activePanel.querySelector('.receipt-img');
+                if (img) {
+                    lightboxImg.src = img.src;
+                    lightbox.classList.add('active');
+                }
+            }
         }
 
         function closeLightbox() {
